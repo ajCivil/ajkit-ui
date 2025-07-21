@@ -1,34 +1,36 @@
 const { VueLoaderPlugin } = require('vue-loader');
 const glob = require('glob');
+const path = require('path');
 
 
 const list = {}
 
-const globDirPath = 'components/**/index.js';
+const globDirPath = 'components/lib/**/index.js';
 
+//实现按需引入
 glob.sync(globDirPath).forEach(function(file) {
-    const component = file.split(/[/.]/)[1]
+    const component = file.split(/[/.]/)[2]
     list[component] = `./${file}`
 });
-
+console.log(list)
 module.exports = {
     entry: list,
     output: {
-        path: __dirname + '/dist',
+        path: path.resolve(__dirname, './dist'),
         filename: '[name].umd.js',
-        library: 'mui',
+        library: 'ajKit',
         libraryTarget: 'umd'
     },
     mode: 'development',
     module: {
         rules: [
-            {
-                test: /\.css$/,
-                use: [
-                    'style-loader',
-                    'css-loader'
-                ]   
-            },
+            // {
+            //     test: /\.css$/,
+            //     use: [
+            //         'style-loader',
+            //         'css-loader'
+            //     ]   
+            // },
             {
                 test: /\.vue$/,
                 use: [
@@ -37,13 +39,13 @@ module.exports = {
                     }
                 ]
             },
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader'
-                }
-            },
+            // {
+            //     test: /\.js$/,
+            //     exclude: /node_modules/,
+            //     use: {
+            //         loader: 'babel-loader'
+            //     }
+            // },
         ]
     },
     plugins: [

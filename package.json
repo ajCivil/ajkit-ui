@@ -6,7 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build:lib": "webpack --config webpack.component.js"
+    "build:lib": "webpack --config webpack.component.js",
+    "build:css": "gulp css",
+    "build:all": "npm run build:lib && npm run build:css"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -21,8 +23,13 @@
     "css-loader": "^7.1.2",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
+    "gulp": "^5.0.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.89.2",
+    "sass-loader": "^16.0.5",
     "style-loader": "^4.0.0",
-    "vue-loader": "^17.4.2",
+    "vue-loader": "^15.11.1",
     "vue-template-compiler": "^2.6.14",
     "webpack-cli": "^4.10.0"
   },

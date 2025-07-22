@@ -1,0 +1,29 @@
+{
+  "name": "aj-button",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "ajCivil <ZhanJining53@163.com>",
+  "homepage": "https://github.com/ajCivil/ajkit-ui#readme",
+  "license": "ISC",
+  "main": "lib/Button.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajCivil/ajkit-ui.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/Button.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/ajCivil/ajkit-ui/issues"
+  }
+}

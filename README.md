@@ -18,3 +18,10 @@ tag1.0.x: 基础组件
 
     使用webpack构建js
     使用gulp构建css
+
+tag2.0.x lerna构建 [[https://cloud.tencent.com/developer/article/1913720]](https://cloud.tencent.com/developer/article/1913720)
+    lerna init 初始化
+    lerna create 创建子项目
+    lerna add 添加依赖
+    nx graph 可视化查看依赖图
+    packages    子项目 [tag2主要是packages下的项目]

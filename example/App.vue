@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <aj-demo 
+    <!-- <aj-demo 
       style="margin: 50px"
       imgSrc="https://n.sinaimg.cn/sinacn10116/600/w1920h1080/20190326/2c30-hutwezf6832339.jpg"
       :imgWidth="300"
@@ -13,7 +13,8 @@
       <template #footer>
         <div>底部</div>
       </template>
-    </aj-demo>
+    </aj-demo> -->
+    <aj-button text="这是组件"></aj-button>
   </div>
 </template>
 

@@ -1,4 +1,4 @@
-const { VueLoaderPlugin } = require('vue-loader');
+const {VueLoaderPlugin} = require('vue-loader');
 const glob = require('glob');
 const path = require('path');
 

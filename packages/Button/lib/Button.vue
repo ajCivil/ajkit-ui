@@ -2,12 +2,18 @@
     <button class="btn" @click="onClick">{{text}}</button>
 </template>
 
-<script lang="ts">
+<script>
 export default {
+    name: 'ajButton',
     data(){
         return {
-            text: '按钮',
-            onClick:()=>{}
+            text: '第一个组件-button组件'
+        }
+    },
+
+    methods: {
+        onClick(){
+            console.log('点击了按钮')
         }
     }
 }

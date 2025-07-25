@@ -25,3 +25,6 @@ tag2.0.x lerna构建 [[https://cloud.tencent.com/developer/article/1913720]](htt
     lerna add 添加依赖
     nx graph 可视化查看依赖图
     packages    子项目 [tag2主要是packages下的项目]
+
+    使用npm pack //打包生成tgz包
+    在项目中使用npm install xxx/ajkit-ui-0.2.0.tgz 添加到项目来测试发布后的效果

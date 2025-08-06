@@ -1,5 +1,5 @@
 <template>
-    <button class="btn" @click="onClick">{{text}}</button>
+    <button class="aj-inner-button" @click="onClick">{{text}}</button>
 </template>
 
 <script>
